@@ -75,7 +75,18 @@ All necessary code to run data analysis and to simulate the model is provided wi
 
 
 ## Attribution
-This presented model code is an adaption of the code by Thierry Hoinville, 2018, as part of the following work:
-Hoinville T, Wehner R. (2018) Optimal multiguidance integration in insect navigation 
-Proceedings of the National Academy of Sciences, 115 (11) 2824-2829; 
+
+#### Model
+This presented model code in `Model_Submission.ipynb` is an adaption of the code by Thierry Hoinville, 2018, as part of the following work:
+
+Hoinville T, Wehner R., Optimal multiguidance integration in insect navigation 
+Proceedings of the National Academy of Sciences, 115 (11), 2824-2829 (2018).
 DOI: [10.1073/pnas.1721668115](https://doi.org/10.1073/pnas.1721668115)
+
+
+#### Tracking Data
+The tracking data used here is part of the Ant Ontogeny Dataset from the following work:
+
+Lars Haalck et al., CATER: Combined Animal Tracking & Environment Reconstruction.
+Science Advances, 9 (16), eadg2094 (2023).
+DOI:[10.1126/sciadv.adg2094](https://doi.org/10.1126/sciadv.adg2094)
