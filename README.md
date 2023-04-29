@@ -62,3 +62,20 @@ From within R, the packages can be installed using
 ```R 
 packages.install(c("ggpubr", "ggplot2", "trajr", "sf", "tools", "ggstatsplot", "rstudio", "stats", "graphics", "grDevices", "utils", "datasets", "methods"))
 ```
+
+## Running the model and analyzing trajectories
+
+All necessary code to run data analysis and to simulate the model is provided within multiple jupyter notebooks. Documentation and comments can be found within the notebooks. An overview of what the notebooks are meant for is given here:
+
+- [Model Submission](Model_Submission.ipynb) notebook: This notebook includes the model code. (It does not run the model, just defines it)
+- [Model Trajectory Visualization](<Model Trajectory Visualization.ipynb>) notebook: This notebook includes runs the calibrated and uncalibrated model versions and plots the reuslting trajectories in the notebook. Plots are also saved to files into the `model_outputs` folder.
+- [Model Validation](Model_Validation.ipynb) notebook: This notebook runs the model validation. It splits the observation data into two sets and uses one to estimate parameters. Then it runs the calibrated and uncalibrated model versions, computes errors compared to the other observation set. Plots are printed in the notebook and saved int the `validation_data` folder.
+- [Sobol Sensitivity Analysis](Sobol_sensitivity_analysis.ipynb) notebook: This notebook runs the Sobol' sensitivity analysis. Parameter ranges and sample size are defined and the model is run (may take several hours for large sample sizes). From the model results Sobol' indices are computed and visualized. Plots are printed in the notebook and saved int the `sensitivity_results` folder.
+- [Trajectory Analysis](trajectory_analysis.ipynb) notebook: This notebook is basically just a wrapper for running the trajectory processing and analysis in R. It executes the R scripts and visualizes the figures in the notebook (does not work on Safari). 
+
+
+## Attribution
+This presented model code is an adaption of the code by Thierry Hoinville, 2018, as part of the following work:
+Hoinville T, Wehner R. (2018) Optimal multiguidance integration in insect navigation 
+Proceedings of the National Academy of Sciences, 115 (11) 2824-2829; 
+DOI: [10.1073/pnas.1721668115](https://doi.org/10.1073/pnas.1721668115)
